@@ -1,2 +1,2 @@
-./node_modules/
-./out_js/
+node_modules
+out_js
