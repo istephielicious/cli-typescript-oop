@@ -1,0 +1,19 @@
+{
+    "compilerOptions": {
+      "outDir": "./out_js/",
+      "sourceMap": false,
+      "noImplicitAny": true, //promts error on 'Any' variable type
+      "module": "es6",
+      "target": "es6",
+      "removeComments": true,
+    },
+    "files": [
+        // "Customer.ts",
+        // "main.ts",
+        // "Person.ts",
+        // "Employee.ts",
+        // "Logger.ts"
+        "./in_ts/Test.ts"
+    ]
+
+  }
