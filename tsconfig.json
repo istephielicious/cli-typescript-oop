@@ -3,16 +3,16 @@
       "outDir": "./out_js/",
       "sourceMap": false,
       "noImplicitAny": true, //promts error on 'Any' variable type
-      "module": "es6",
+      "module": "commonJS",
       "target": "es6",
       "removeComments": true,
     },
     "files": [
-        // "Customer.ts",
-        // "main.ts",
-        // "Person.ts",
-        // "Employee.ts",
-        // "Logger.ts"
+        "./in_ts/Customer.ts",
+        "./in_ts/main.ts",
+        "./in_ts/Person.ts",
+        "./in_ts/Employee.ts",
+        "./in_ts/Logger.ts",
         "./in_ts/Test.ts"
     ]
 
