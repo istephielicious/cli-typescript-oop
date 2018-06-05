@@ -1,46 +1,21 @@
+
+
 export class Person {
 
-    constructor(protected id: number, protected lName: string, 
-        protected fName: string, protected email: string) {
+    public static PERSON_COUNT : number = 0;
+
+    constructor(protected _id: number = Person.PERSON_COUNT++, protected _lName: string = "", 
+        protected _fName: string = "", protected _email: string = "") {
     }
 
     public getFullName () :string {
-        return this.fName + " " + this.lName;
+        return this._fName + " " + this._lName;
     };
     public printInfo() :string {
         return "PERSONAL DETAILS \n" +
-                "ID: "+ this.id +
+                "ID: "+ this._id +
                 "Name: "+this.getFullName() +"\n" +
-                "Email: "+this.email;
+                "Email: "+this._email;
     }
-    
-
-    // //setters.
-    // set id (id: number) {
-    //     this._id = id;
-    // }
-    // set fName (str: string) {
-    //     this._fName = str;
-    // }
-    // set lName (str: string) {
-    //     this._lName = str;
-    // }
-    // set email (str: string) {
-    //     this._email = str;
-    // }
-
-    // //getters.
-    // get id () :number {
-    //     return this._id;
-    // }
-    // get fName () :string {
-    //     return this._fName;
-    // }
-    // get lName () :string {
-    //     return this._lName;
-    // }
-    // get email () :string {
-    //     return this._email;
-    // }
 
  }

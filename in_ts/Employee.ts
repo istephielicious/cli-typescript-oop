@@ -13,11 +13,32 @@ export class Employee extends Person implements PrintLogger{
         printLog(this, "Create Employee");
     }
 
-    //getter.
-    public getID () : number {
-        printLog(this, "Employee::getID()");
-        
-        return this.id;
+    //setters.
+    set id (id: number) {
+        this._id = id;
+    }
+    set fName (str: string) {
+        this._fName = str;
+    }
+    set lName (str: string) {
+        this._lName = str;
+    }
+    set email (str: string) {
+        this._email = str;
+    }
+
+    //getters.
+    get id () :number {
+        return this._id;
+    }
+    get fName () :string {
+        return this._fName;
+    }
+    get lName () :string {
+        return this._lName;
+    }
+    get email () :string {
+        return this._email;
     }
 
     public empCount () :number {

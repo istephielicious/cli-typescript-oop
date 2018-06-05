@@ -3,7 +3,7 @@
       "outDir": "./out_js/",
       "sourceMap": false,
       "noImplicitAny": true, //promts error on 'Any' variable type
-      "module": "commonJS",
+      "module": "es6",
       "target": "es6",
       "removeComments": true,
     },
@@ -13,7 +13,8 @@
         "./in_ts/Person.ts",
         "./in_ts/Employee.ts",
         "./in_ts/Logger.ts",
-        "./in_ts/Test.ts"
+        "./in_ts/Test.ts",
+        "./in_ts/Chapter4.ts"        
     ]
 
   }
